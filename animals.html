@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>전주 동물원</title>
+        <link href="css/animald.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <div class="head">
+                <a href="index.html"><img src = "res/ZooLogo.png"
+                    id="logohome"> </a> 
+                    <a href="animals.html"><button class="headmenu"><img src="res/button_animal.png" class="button"/></button></a>
+                    <a href="inform.html"><button class="headmenu"><img src="res/button_howto.png" class="button"/></button></a>
+                    <a href="refer.html"><button class="headmenu"><img src="res/button_refer.png" class="button"/></button></a>
+            </div>
+        </div> <br>
+
+        <div class="grid">
+            <div class="list">
+                <h1>동물목록</h1>
+                <details name="포유류">
+                    <summary>
+                        포유류
+                    </summary>
+                    <ol>
+                        <li><a href="html/animal/desertFox.html">사막여우</a></li>
+                        <li><a href="animalinform.html?id=waterFox">수달</a></li>
+                        <li><a href="animalinform.html?id=sirasony">스라소니</a></li>
+                        <li><a href="animalinform.html?id=cow">아메리카들소</a></li>
+                    </ol>
+                </details>
+                <details name="조류">
+                    <summary>
+                        조류
+                    </summary>
+                    <ol>
+                        <li><a href="animalinform.html?id=yellow">노랑배유리앵무</a></li>
+                        <li><a href="animalinform.html?id=yellowclown">노랑왕관머리앵무</a></li>
+                        <li><a href="animalinform.html?id=red">붉은얼굴금강앵무</a></li>
+                        <li><a href="animalinform.html?id=rainbow">오색청해앵무</a></li>
+                    </ol>
+                </details>
+                <details name="파충류">
+                    <summary>
+                        파충류
+                    </summary>
+                    <ol>
+                        <li><a href="animalinform.html?id=snake">버마비단뱀</a></li>
+                        <li><a href="animalinform.html?id=glass">안경카이만</a></li>
+                    </ol>
+                </details>
+                <details name="어류">
+                    <summary>
+                        어류
+                    </summary>
+                    <ol>
+                        <li><a href="animalinform.html?id=fishking">비단잉어</a></li>
+                        <li><a href="animalinform.html?id=justfish">잉어</a></li>
+                    </ol>
+                </details>
+            </div>
+            <div class="form">
+                <h2>동물</h2>
+                <div class="animalphotos">
+                    <a href="html/animal/desertFox.html"><img src="res/animal/mams/사막여우.jpg"></a>
+                    <a href="html/animal/waterFox.html"><img src="res/animal/mams/수달.jpg"></a>
+                    <a href="animalinform.html?id=sirasony"><img src="res/animal/mams/스라소니.jpg"></a>
+                    <a href="animalinform.html?id=cow"><img src="res/animal/mams/아메리카들소.jpg"></a>
+                    <a href="animalinform.html?id=yellow"><img src="res/animal/birds/노랑배유리앵무.jpg"></a>
+                    <a href="animalinform.html?id=yellowclown"><img src="res/animal/birds/노랑왕관머리아마존앵무.jpg"></a>
+                    <a href="animalinform.html?id=red"><img src="res/animal/birds/붉은얼굴금강앵무.jpg"></a>
+                    <a href="animalinform.html?id=rainbow"><img src="res/animal/birds/오색청해앵무.jpg"></a>
+                    <a href="animalinform.html?id=snake"><img src="res/animal/reptile/버마비단뱀.jpg"></a>
+                    <a href="animalinform.html?id=glass"><img src="res/animal/reptile/안경카이만.jpg"></a>
+                    <a href="animalinform.html?id=fishking"><img src="res/animal/fish/비단잉어.jpg"></a>
+                    <a href="animalinform.html?id=justfish"><img src="res/animal/fish/잉어.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('div.animalphotos a')
+        </script>
+        </body>
+</html>

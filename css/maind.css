@@ -1,0 +1,60 @@
+img#logohome{
+    width:125px;
+    height: 100px;
+    margin-top : 20px;
+    margin-left : 20px;
+}
+#logohome:hover{
+    cursor: pointer;
+}
+
+div .head {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+div button {
+    background-color: white;
+    border:none;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+div button:hover {
+    transform:scale(1.1, 1.1);
+    cursor: pointer;
+}
+div button:active {
+    transform:scale(1.0, 1.0);
+    box-shadow: none;
+}
+
+div.body1{
+    text-align: center;
+}
+
+.slider {
+    width: 600px;
+    height: 500px;                               
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slide {
+    width: 100%;
+}
+img {
+    width: 100%;
+    height: auto;                                                  
+}
+
+div.photos{
+    display: inline-flex;
+}
+
+div.photos div{
+    margin-left: 10px;
+    margin-right: 10px;
+}

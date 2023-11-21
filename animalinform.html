@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>전주 동물원</title>
+        <link href="css/animald.css" rel="stylesheet" type="text/css">
+        <script>
+            window.addEventListener('DOMContentLoaded', function() {
+
+
+                let src=new String(document.location);
+                let srcName=src.split("id=")[1];
+
+                fetch(`html/animal/${srcName}.txt`)
+                .then(response => response.text())
+                .then(text => document.querySelector("div.form").innerText = text);
+            })
+        </script>
+    </head>
+    <body>
+        <div>
+            <div class="head">
+                <a href="index.html"><img src = "res/ZooLogo.png"
+                    id="logohome"> </a> 
+                    <a href="animals.html"><button class="headmenu"><img src="res/button_animal.png" class="button"/></button></a>
+                    <a href="inform.html"><button class="headmenu"><img src="res/button_howto.png" class="button"/></button></a>
+                    <a href="refer.html"><button class="headmenu"><img src="res/button_refer.png" class="button"/></button></a>
+            </div>
+        </div> <br>
+
+        <div class="grid">
+            <div class="list">
+                <h1>동물목록</h1>
+                <details name="포유류">
+                    <summary>
+                        포유류
+                    </summary>
+                    <ol>
+                        <li><a href="animals.html?id=desertFox">사막여우</a></li>
+                        <li><a href="animalinform.html?id=waterFox">수달</a></li>
+                        <li><a href="animalinform.html?id=sirasony">스라소니</a></li>
+                        <li><a href="animalinform.html?id=cow">아메리카들소</a></li>
+                    </ol>
+                </details>
+                <details name="조류">
+                    <summary>
+                        조류
+                    </summary>
+                    <ol>
+                        <li><a href="animalinform.html?id=yellow">노랑배유리앵무</a></li>
+                        <li><a href="animalinform.html?id=yellowclown">노랑왕관머리앵무</a></li>
+                        <li><a href="animalinform.html?id=red">붉은얼굴금강앵무</a></li>
+                        <li><a href="animalinform.html?id=rainbow">오색청해앵무</a></li>
+                    </ol>
+                </details>
+                <details name="파충류">
+                    <summary>
+                        파충류
+                    </summary>
+                    <ol>
+                        <li><a href="animalinform.html?id=snake">버마비단뱀</a></li>
+                        <li><a href="animalinform.html?id=glass">안경카이만</a></li>
+                    </ol>
+                </details>
+                <details name="어류">
+                    <summary>
+                        어류
+                    </summary>
+                    <ol>
+                        <li><a href="animalinform.html?id=fishking">비단잉어</a></li>
+                        <li><a href="animalinform.html?id=justfish">잉어</a></li>
+                    </ol>
+                </details>
+            </div>
+            <div class="form">
+                
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('div.animalphotos a')
+        </script>
+        </body>
+</html>

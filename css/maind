@@ -1,0 +1,10 @@
+img #homelogo {
+    width: 55px;
+    height: 55px;
+    
+}
+
+div{
+    background-color: aqua;
+    font-size: 30px;
+}
